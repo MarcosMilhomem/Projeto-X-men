@@ -9,7 +9,14 @@ personagens.forEach ((personagem) => {
         personagem.classList.add('selecionado')
 
         const imagemPersonagemGrande = document.querySelector('.personagem-grande')
+        const idPersonagem = personagem.attributes.id.value;
         
-        imagemPersonagemGrande.src = "../imagens/card-vampira.png";
+        imagemPersonagemGrande.src = `../src/imagens/card-${idPersonagem}.png`;
+
+        const nomePersonagem = document.querySelector('#nome-personagem')
+        nomePersonagem.innerText = personagem.getAttribute('data-name')
+
+        const descricaoPersonagem = document.querySelector('#descricao-personagem');
+        descricaoPersonagem.innerText = personagem.getAttribute('data-description')
     })
 })

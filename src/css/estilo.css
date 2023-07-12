@@ -83,6 +83,7 @@ body::before {
 .personagem-selecionado .descricao-personagem {
     font-size: 16px;
     line-height: 22px;
+    max-width: 580px;
 }
 
 .personagem-selecionado .formacoes-personagem {
